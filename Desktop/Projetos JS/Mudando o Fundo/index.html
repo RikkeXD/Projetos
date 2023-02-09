@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança no Background</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Escolha uma cor e aperte em mudar</h1>
+    <input type="button" value="Vermelho" id="red">
+    <input type="button" value="Preto" id="black">
+    <input type="button" value="Branco" id="white">
+    <input type="button" value="Verde" id="green">
+    <input type="button" value="Azul" id="blue">
+    <input type="button" value="Rosa" id="pink">
+    <div>
+        <h2>Mude a a cor da fonte</h2>
+        <input type="button" value="Preto" id="fblack">
+        <input type="button" value="Branco" id="fwhite">
+        <input type="button" value="Vermelho">
+    </div>
+</body>
+<script>
+    var vermelho = document.getElementById("red")
+    var branco = document.getElementById("white")
+    var preto = document.getElementById("black")
+    var verde = document.getElementById("green")
+    var azul = document.getElementById('blue')
+    var rosa = document.getElementById('pink')
+
+    var fundo = document.querySelector("body")
+
+    vermelho.addEventListener("click", red)
+    branco.addEventListener("click", white)
+    preto.addEventListener('click', black)
+    verde.addEventListener("click", green)
+    azul.addEventListener('click', blue)
+    rosa.addEventListener('click', pink)
+
+    function red(){
+        fundo.style.background = 'red'
+    }
+    function white() {
+        fundo.style.background = 'white'
+    }
+    function  black(){
+        fundo.style.background = 'black'
+        fundo.style.color = 'white'
+    }
+    function green(){
+        fundo.style.background = 'green'
+    }
+    function blue(){
+        fundo.style.background = 'blue'
+    }
+    function pink(){
+        fundo.style.background = 'pink'
+    }
+
+</script>
+</html>
